@@ -9,6 +9,7 @@ platforms = ["linux-64"]
 [tasks]
 colbert_server = "TF_CPP_MIN_LOG_LEVEL=3 python colbert_server.py"
 dspy_qa = "TF_CPP_MIN_LOG_LEVEL=3 python run_dspy.py"
+setup_packages = "bash scripts/setup_packages.sh"
 
 [dependencies]
 python = "3.8"
@@ -36,3 +37,5 @@ regex = "2023.8.8.*"
 ujson = "5.7.0.*"
 tqdm = "4.66.1.*"
 backoff = "2.2.1.*"
+bitarray = "2.8.1.*"
+datasets = "2.13.1.*"

@@ -38,7 +38,7 @@ class SearchAppState(BaseModel):
             for x in collection_dataset[search_config.datasplit + "_collection"]
         ]
 
-        index_root = os.path.join(os.path.getcwd(), search_config.index_path)
+        index_root = os.path.join(os.getcwd(), search_config.index_path)
         searcher = Searcher(
             index=f"{index_root}/{search_config.index_name}",
             collection=collection,

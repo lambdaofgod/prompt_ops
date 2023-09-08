@@ -14,8 +14,8 @@
 - [x] FastAPI
 - [x] class for wrapping Searcher in app
 - [x] search config in `colbert_server.py` (moved from ColBERT/.env)
+- [x] setup step for ColBERT repo
 - [ ] parametrize main in `colbert_server.py` with the config
-- [ ] setup step for ColBERT repo
 - [ ] script to build the index
 - [ ] pixi commands for running the app with parameters and indexing
 - [ ] configure indexing to provide the collection, for now the collection is downloaded separately in colbert_server
