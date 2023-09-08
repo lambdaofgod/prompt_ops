@@ -1,0 +1,30 @@
+[project]
+name = "prompt_ops"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["lambdaofgod <bartczukkuba@gmail.com>"]
+channels = ["conda-forge", "nvidia", "pytorch"]
+platforms = ["linux-64"]
+
+[tasks]
+colbert_server = "python colbert_server.py"
+
+[dependencies]
+python = "3.8"
+jupyter = "1.0.0.*"
+scipy = "1.10.1.*"
+flask = "2.3.3.*"
+icu = "67.1.*"
+spacy = "3.6.1.*"
+pytorch-gpu = "1.11.0.*"
+faiss-gpu = "1.7.4.*"
+pip = "23.2.1.*"
+opt_einsum = "3.3.0.*"
+transformers = "4.33.1.*"
+wrapt = "1.15.0.*"
+gast = "0.5.4.*"
+astunparse = "1.6.3.*"
+ipykernel = "6.25.2.*"
+fastapi = "0.103.1.*"
+uvicorn = "0.23.2.*"
+fire = "0.5.0.*"
