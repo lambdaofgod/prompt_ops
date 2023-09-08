@@ -1,9 +1,12 @@
+import logging
 from pathlib import Path
 
 import fire
 import openai
 
 import dspy
+
+logging.basicConfig(level=logging.INFO)
 
 
 def setup_dspy(key_path, colbert_url):
@@ -27,6 +30,9 @@ def run_dspy_qa(
     key_path="~/.keys/openai_key.txt",
     colbert_url="http://20.102.90.50:2017/wiki17_abstracts",
 ):
+    logging.info("Setting up dspy")
+    logging.info(f"using OpenAI key from {key_path}")
+    logging.info(f"using colbert running on {colbert_url}")
     # Define the predictor.
     setup_dspy(key_path, colbert_url)
     generate_answer = dspy.Predict(BasicQA)
